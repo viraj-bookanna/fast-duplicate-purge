@@ -55,7 +55,7 @@ func main() {
 
 	wg.Wait()
 	bar.Finish()
-	newFile, err := os.Create(os.Args[1]) // results file name
+	newFile, err := os.Create(os.Args[2]) // results file name
 	if err != nil {
 		fmt.Println("Error creating file:", err)
 		return
